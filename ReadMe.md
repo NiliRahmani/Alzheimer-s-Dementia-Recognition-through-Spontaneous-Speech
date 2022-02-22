@@ -9,4 +9,4 @@ The problem has been considered in 2 cases:
 1. classification considering 2 classes (normal or with dementia)
 2. classification considering 4 classes (considering stage of the dementia - classes: normal, stage1, stage2, stage3)
 
-finally the 'model_training.ipnb' trains a random forest model using the extracted features and the results have been shown. 
+finally the 'model_training.ipnb' trains  4 different models using the extracted features and the results have been shown. As we can see the RandomForest has the best accuracy and so it has been chosen as the best model for prediction.

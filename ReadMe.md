@@ -1,5 +1,5 @@
 Alzheimer's Dementia Recognition through Spontaneous Speech
-The ADReSSo Challenge
+
 
 My main idea to solve this issue is extracting some features out of the speech signals and then training a classification model using the features. The main paper that I have used for feature selection is: "Simple and robust audio-based detection of biomarkers for Alzheimer’s disease". 
 

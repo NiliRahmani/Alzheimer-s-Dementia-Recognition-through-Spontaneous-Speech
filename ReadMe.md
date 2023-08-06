@@ -1,15 +1,21 @@
-Alzheimer's Dementia Recognition through Spontaneous Speech
+Introduction
+This repository contains code and information related to the recognition of Alzheimer's Dementia through spontaneous speech. The main idea is to extract relevant features from the speech signals and train a classification model using these features. The primary paper used for feature selection is titled "Simple and robust audio-based detection of biomarkers for Alzheimer's disease."
+
+Feature Extraction
+The code Feature_Extraction.ipynb is responsible for reading all the audio files one by one and clipping them into 20-second length segments with a 1-second overlap. After the clipping process, it extracts features from each clipped file. To enhance data diversity, the clipping and feature extraction process has been repeated for all files with four different speeds: 0.7, 0.8, 1.2, and 1.3.
+
+Problem Formulation
+The problem has been approached in two different cases:
+
+Classification considering 2 classes (normal or with dementia).
+Classification considering 4 classes, taking into account the stage of dementia (classes: normal, stage 1, stage 2, stage 3).
+Model Training
+The model_training.ipynb notebook is responsible for training four different models using the extracted features. The results have been presented and analyzed, showing that the RandomForest model achieved the highest accuracy. Therefore, it has been selected as the best model for prediction.
+
+Audio Files
+Please note that due to GitHub's file size limit of 100.00 MB, the audio files could not be uploaded directly to this repository. Instead, you can [access the audio files here](https://drive.google.com/drive/folders/1jNgJuWBAFtE-TMdUQ45ZFlfNT1TUkO4a?usp=sharing).
 
 
-My main idea to solve this issue is extracting some features out of the speech signals and then training a classification model using the features. The main paper that I have used for feature selection is: "Simple and robust audio-based detection of biomarkers for Alzheimer’s disease". 
+For any questions, suggestions, or collaborations, feel free to reach out.
 
-The code 'Feature_Extraction.ipnb' reads all the audio files one by one, clipps them to some 20 second length files which have a overlap of 1 second. then it extracts the features out of each clipped file. For data augmentation, the clipping and feature extraction process has been repeatd for all the files with 4 new speeds: 0.7 ,0.8 , 1.2 and 1.3.
-
-The problem has been considered in 2 cases: 
-1. classification considering 2 classes (normal or with dementia)
-2. classification considering 4 classes (considering stage of the dementia - classes: normal, stage1, stage2, stage3)
-
-finally the 'model_training.ipnb' trains  4 different models using the extracted features and the results have been shown. As we can see the RandomForest has the best accuracy and so it has been chosen as the best model for prediction.
-
-
-*Attention! Due to GitHub's file size limit of 100.00 MB I couldn't upload the audio files here so this is a link to access them: https://drive.google.com/drive/folders/1jNgJuWBAFtE-TMdUQ45ZFlfNT1TUkO4a?usp=sharing
+Thank you!
